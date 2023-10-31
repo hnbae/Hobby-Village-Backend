@@ -58,7 +58,7 @@ public class UserProductsController {
 
 	// ----------------------------
 
-	// 상품 목록 조회 - 검색여부 구분(if 추가 필요) - 평점순과 기타정렬 구분
+	// 상품 목록 조회 - 검색여부 구분(if) - 평점순과 기타정렬 구분
 	@GetMapping("")
 	public List<UserProductsDTO> getProductList(@RequestParam(value = "category", required = true) String category,
 			@RequestParam(value = "sort", required = true) String sort,
